@@ -239,7 +239,7 @@ All commands should be ran within the local repository
 ### 3.1. Download Data
 Run the following to load the necessary data sets for Fasta and gff files of the genomes listed above.
 ```
-chmod +x installs/synteny.sh
+chmod +x installs/load_data.sh
 ./installs/load_data.sh
 ```
 ### 3.2. Upload to JBrowse2
