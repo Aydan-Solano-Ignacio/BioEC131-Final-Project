@@ -262,6 +262,8 @@ cat *.fna >> MSA.fna
 ```
 Then, on the JBrowse local instance, select **Tools** => **Plug-in Store**, and on the right hand side of the page, install the plug-in *MsaView* for access to Multiple Sequence Alignment Tool.
 
+Once you add a multiple sequence alignment from the **Add** menu, upload the file MSA.fna.
+
 
 ### 3.5. Index Search by Gene
 Run the “jbrowse text-index” command to allow users to search by gene name within JBrowse 2.
