@@ -1,0 +1,731 @@
+{
+  "assemblies": [
+    {
+      "name": "SARS-CoV-2",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "SARS-CoV-2-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "SARS-CoV-2.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "SARS-CoV-2.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "SARS-CoV",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "SARS-CoV-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "SARS-CoV.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "SARS-CoV.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "MERS-CoV",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "MERS-CoV-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "MERS-CoV.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "MERS-CoV.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "HCoV-229E",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "HCoV-229E-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "HCoV-229E.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "HCoV-229E.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "HCoV-NL63",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "HCoV-NL63-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "HCoV-NL63.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "HCoV-NL63.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "HCoV-OC43",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "HCoV-OC43-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "HCoV-OC43.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "HCoV-OC43.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "BCov-HKU4",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "BCov-HKU4-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "BCov-HKU4.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "BCov-HKU4.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "BCov-RaTG13",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "BCov-RaTG13-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "BCov-RaTG13.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "BCov-RaTG13.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "BCov-WIV16",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "BCov-WIV16-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "BCov-WIV16.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "BCov-WIV16.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    }
+  ],
+  "configuration": {},
+  "connections": [],
+  "defaultSession": {
+    "name": "New Session"
+  },
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "SARS-CoV-2.gff",
+      "name": "SARS-CoV-2.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "SARS-CoV-2.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "SARS-CoV-2.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "SARS-CoV-2"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "SARS-CoV.gff",
+      "name": "SARS-CoV.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "SARS-CoV.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "SARS-CoV.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "SARS-CoV"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "MERS-CoV.gff",
+      "name": "MERS-CoV.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "MERS-CoV.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "MERS-CoV.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "MERS-CoV"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "HCoV-229E.gff",
+      "name": "HCoV-229E.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "HCoV-229E.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "HCoV-229E.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "HCoV-229E"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "HCoV-NL63.gff",
+      "name": "HCoV-NL63.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "HCoV-NL63.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "HCoV-NL63.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "HCoV-NL63"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "HCoV-OC43.gff",
+      "name": "HCoV-OC43.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "HCoV-OC43.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "HCoV-OC43.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "HCoV-OC43"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "BCov-HKU4.gff",
+      "name": "BCov-HKU4.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "BCov-HKU4.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "BCov-HKU4.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "BCov-HKU4"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "BCov-RaTG13.gff",
+      "name": "BCov-RaTG13.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "BCov-RaTG13.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "BCov-RaTG13.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "BCov-RaTG13"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "BCov-WIV16.gff",
+      "name": "BCov-WIV16.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "BCov-WIV16.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "BCov-WIV16.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "BCov-WIV16"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SARS-CoV-2_vs_SARS-CoV",
+      "name": "SARS-CoV-2_vs_SARS-CoV",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "SARS-CoV-2_vs_SARS-CoV.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "SARS-CoV",
+          "SARS-CoV-2"
+        ]
+      },
+      "assemblyNames": [
+        "SARS-CoV",
+        "SARS-CoV-2"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SARS-CoV-2_vs_MERS-CoV",
+      "name": "SARS-CoV-2_vs_MERS-CoV",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "SARS-CoV-2_vs_MERS-CoV.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "MERS-CoV",
+          "SARS-CoV-2"
+        ]
+      },
+      "assemblyNames": [
+        "MERS-CoV",
+        "SARS-CoV-2"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SARS-CoV-2_vs_HCoV-229E",
+      "name": "SARS-CoV-2_vs_HCoV-229E",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "SARS-CoV-2_vs_HCoV-229E.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-229E",
+          "SARS-CoV-2"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-229E",
+        "SARS-CoV-2"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SARS-CoV-2_vs_HCoV-NL63",
+      "name": "SARS-CoV-2_vs_HCoV-NL63",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "SARS-CoV-2_vs_HCoV-NL63.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-NL63",
+          "SARS-CoV-2"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-NL63",
+        "SARS-CoV-2"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SARS-CoV-2_vs_HCoV-OC43",
+      "name": "SARS-CoV-2_vs_HCoV-OC43",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "SARS-CoV-2_vs_HCoV-OC43.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-OC43-CoV",
+          "SARS-CoV-2"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-OC43-CoV",
+        "SARS-CoV-2"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SARS-CoV_vs_MERS-CoV",
+      "name": "SARS-CoV_vs_MERS-CoV",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "SARS-CoV_vs_MERS-CoV.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "MERS-CoV",
+          "SARS-CoV"
+        ]
+      },
+      "assemblyNames": [
+        "MERS-CoV",
+        "SARS-CoV"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SARS-CoV_vs_HCoV-229E",
+      "name": "SARS-CoV_vs_HCoV-229E",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "SARS-CoV_vs_HCoV-229E.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-229E",
+          "SARS-CoV"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-229E",
+        "SARS-CoV"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SARS-CoV_vs_HCoV-NL63",
+      "name": "SARS-CoV_vs_HCoV-NL63",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "SARS-CoV_vs_HCoV-NL63.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-NL63",
+          "SARS-CoV"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-NL63",
+        "SARS-CoV"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SARS-CoV_vs_HCoV-OC43",
+      "name": "SARS-CoV_vs_HCoV-OC43",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "SARS-CoV_vs_HCoV-OC43.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-OC43-CoV",
+          "SARS-CoV"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-OC43-CoV",
+        "SARS-CoV"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "MERS-CoV_vs_HCoV-229E",
+      "name": "MERS-CoV_vs_HCoV-229E",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "MERS-CoV_vs_HCoV-229E.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-229E",
+          "MERS-CoV"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-229E",
+        "MERS-CoV"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "MERS-CoV_vs_HCoV-NL63",
+      "name": "MERS-CoV_vs_HCoV-NL63",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "MERS-CoV_vs_HCoV-NL63.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-NL63",
+          "MERS-CoV"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-NL63",
+        "MERS-CoV"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "MERS-CoV_vs_HCoV-OC43",
+      "name": "MERS-CoV_vs_HCoV-OC43",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "MERS-CoV_vs_HCoV-OC43.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-OC43-CoV",
+          "MERS-CoV"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-OC43-CoV",
+        "MERS-CoV"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "HCoV-229E_vs_HCoV-NL63",
+      "name": "HCoV-229E_vs_HCoV-NL63",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "HCoV-229E_vs_HCoV-NL63.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-NL63",
+          "HCoV-229E"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-NL63",
+        "HCoV-229E"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "HCoV-229E_vs_HCoV-OC43",
+      "name": "HCoV-229E_vs_HCoV-OC43",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "HCoV-229E_vs_HCoV-OC43.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-OC43-CoV",
+          "HCoV-229E"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-OC43-CoV",
+        "HCoV-229E"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "HCoV-NL63_vs_HCoV-OC43",
+      "name": "HCoV-NL63_vs_HCoV-OC43",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "HCoV-NL63_vs_HCoV-OC43.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "HCoV-OC43-CoV",
+          "HCoV-NL63"
+        ]
+      },
+      "assemblyNames": [
+        "HCoV-OC43-CoV",
+        "HCoV-NL63"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "MERS-CoV_vs_BCov-HKU4",
+      "name": "MERS-CoV_vs_BCov-HKU4",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "MERS-CoV_vs_BCov-HKU4.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "BCov-HKU4",
+          "MERS-CoV"
+        ]
+      },
+      "assemblyNames": [
+        "BCov-HKU4",
+        "MERS-CoV"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SARS-CoV-2_vs_BCov-RaTG13",
+      "name": "SARS-CoV-2_vs_BCov-RaTG13",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "SARS-CoV-2_vs_BCov-RaTG13.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "BCov-RaTG13",
+          "SARS-CoV-2"
+        ]
+      },
+      "assemblyNames": [
+        "BCov-RaTG13",
+        "SARS-CoV-2"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SARS-CoV-2_vs_BCov-WIV16",
+      "name": "SARS-CoV-2_vs_BCov-WIV16",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "SARS-CoV-2_vs_BCov-WIV16.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "BCov-WIV16",
+          "SARS-CoV-2"
+        ]
+      },
+      "assemblyNames": [
+        "BCov-WIV16",
+        "SARS-CoV-2"
+      ]
+    }
+  ]
+}
